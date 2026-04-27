@@ -17,3 +17,8 @@ echo "Dùng depcruise để tạo sơ đồ"
 npm run ddd:docs
 
 git add docs
+
+echo "Dùng barrelsby để cập nhật index.ts"
+npm run generate-barrels
+
+git add src/index.ts

@@ -70,9 +70,10 @@ jobs:
           doppler-token: ${{ secrets.DOPPLER_TOKEN }}
           doppler-project: 20206205tech
           doppler-config: prod
-
+      
       - name: Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Secret mặc định của GitHub Actions
-          NPM_TOKEN: ${{ steps.doppler.outputs.NPM_TOKEN }} # Lấy từ Doppler
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ steps.doppler.outputs.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ steps.doppler.outputs.NPM_TOKEN }} 
         run: npx semantic-release

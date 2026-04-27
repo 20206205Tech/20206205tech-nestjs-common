@@ -23,5 +23,5 @@
     "noFallthroughCasesInSwitch": false,
     "allowJs": true
   },
-  "include": ["src", ".dependency-cruiser.js"]
+  "include": ["src"]
 }

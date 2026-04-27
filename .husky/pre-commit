@@ -22,3 +22,6 @@ echo "Dùng barrelsby để cập nhật index.ts"
 npm run generate-barrels
 
 git add src/index.ts
+
+echo "Chạy Test Coverage"
+npm run test:cov

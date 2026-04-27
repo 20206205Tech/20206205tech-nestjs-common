@@ -3,5 +3,9 @@
  */
 
 export * from './common/constants/swagger.constant';
-export * from './ddd/domain/exceptions/domain.exception';
-export * from './ddd/domain/exceptions/invalid-version.exception';
+export * from './common/ddd/api/http/controllers/base.controller';
+export * from './common/ddd/api/http/dto/response/base.response.dto';
+export * from './common/ddd/api/http/filters/domain-exception.filter';
+export * from './common/ddd/domain/exceptions/domain.exception';
+export * from './common/ddd/domain/exceptions/invalid-version.exception';
+export * from './common/ddd/utils/base-logger';

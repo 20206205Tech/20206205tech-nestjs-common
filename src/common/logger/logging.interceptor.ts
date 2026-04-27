@@ -59,7 +59,9 @@ export class LoggingInterceptor implements NestInterceptor {
 
     const requestId = (request.headers['request-id'] as string) || undefined;
     const requestPayload = request.body as Record<string, unknown>;
-    const user = request.user;
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const user = request.user as any;
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     const userId = (user?.userId as string) || 'Unknown User';
 
     // 3. IN LOG CONSOLE TRƯỚC KHI XỬ LÝ

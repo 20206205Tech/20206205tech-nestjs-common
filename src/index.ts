@@ -3,3 +3,5 @@
  */
 
 export * from './common/constants/swagger.constant';
+export * from './ddd/domain/exceptions/domain.exception';
+export * from './ddd/domain/exceptions/invalid-version.exception';

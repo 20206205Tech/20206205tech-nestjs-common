@@ -17,3 +17,6 @@ export * from './common/ddd/api/http/filters/domain-exception.filter';
 export * from './common/ddd/domain/exceptions/domain.exception';
 export * from './common/ddd/domain/exceptions/invalid-version.exception';
 export * from './common/ddd/utils/base-logger';
+export * from './common/logger/logger.module';
+export * from './common/logger/logging.interceptor';
+export * from './common/logger/entities/request-log.entity';

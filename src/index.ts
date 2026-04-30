@@ -21,6 +21,3 @@ export * from './common/ddd/domain/value-objects/base-version';
 export * from './common/ddd/domain/value-objects/domain-value-object';
 export * from './common/ddd/domain/value-objects/user-id';
 export * from './common/ddd/utils/base-logger';
-export * from './common/logger/logger.module';
-export * from './common/logger/logging.interceptor';
-export * from './common/logger/entities/request-log.entity';

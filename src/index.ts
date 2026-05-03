@@ -32,3 +32,4 @@ export * from './common/ddd/infrastructure/database/mappers/base-version-aggrega
 export * from './common/ddd/infrastructure/database/repositories/base-entity.orm-repository';
 export * from './common/ddd/infrastructure/database/repositories/base-version-aggregate-root.orm-repository';
 export * from './common/ddd/utils/base-logger';
+export * from './common/tracing/tracing';

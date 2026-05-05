@@ -2,13 +2,17 @@ import { BaseVersion } from '../value-objects/base-version';
 import { BaseEntity } from './base-entity';
 
 export abstract class BaseVersionAggregateRoot extends BaseEntity {
+  public version: BaseVersion;
+
   constructor(
     id: string,
-    public version: BaseVersion,
-    isActive: boolean,
-    createdAt: Date,
+    version?: number | BaseVersion,
+    isActive: boolean = true,
+    createdAt: Date = new Date(),
   ) {
     super(id, isActive, createdAt);
+    this.version =
+      version instanceof BaseVersion ? version : new BaseVersion(version ?? 1);
   }
 
   incrementVersion() {

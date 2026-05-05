@@ -6,8 +6,8 @@ export abstract class BaseEntity {
 
   constructor(
     public readonly id: string,
-    isActive: boolean,
-    createdAt: Date,
+    isActive: boolean = true,
+    createdAt: Date = new Date(),
   ) {
     this._isActive = isActive;
     this._createdAt = createdAt;

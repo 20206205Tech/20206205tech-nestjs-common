@@ -32,7 +32,7 @@ export const initTracing = (serviceName: string) => {
 
   // Đảm bảo đóng SDK khi app tắt để giải phóng tài nguyên
   process.on('SIGTERM', () => {
-    sdk
+    void sdk
       ?.shutdown()
       .then(() => console.log('[Tracing] Terminated'))
       .finally(() => process.exit(0));

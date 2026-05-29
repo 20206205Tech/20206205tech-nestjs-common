@@ -12,7 +12,7 @@ export abstract class BaseVersionAggregateRoot extends BaseEntity {
   ) {
     super(id, isActive, createdAt);
     this.version =
-      version instanceof BaseVersion ? version : new BaseVersion(version ?? 1);
+      version instanceof BaseVersion ? version : new BaseVersion(version ?? 0);
   }
 
   incrementVersion() {

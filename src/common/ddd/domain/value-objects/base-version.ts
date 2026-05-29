@@ -2,7 +2,7 @@ import { InvalidVersionException } from '../exceptions/invalid-version.exception
 import { DomainValueObject } from './domain-value-object';
 
 export class BaseVersion extends DomainValueObject<number> {
-  static readonly MIN_VALUE = 1;
+  static readonly MIN_VALUE = 0;
 
   constructor(value: number) {
     BaseVersion.validate(value);

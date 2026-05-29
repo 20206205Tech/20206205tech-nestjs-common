@@ -2,7 +2,6 @@ import { NodeSDK } from '@opentelemetry/sdk-node';
 import { getNodeAutoInstrumentations } from '@opentelemetry/auto-instrumentations-node';
 import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-proto';
 
-// Khởi tạo exporter
 const traceExporter = new OTLPTraceExporter({
   url: 'https://api.honeycomb.io/v1/traces',
   headers: {
@@ -15,7 +14,7 @@ let isStarted = false;
 
 /**
  * Khởi tạo Tracing với OpenTelemetry
- * @param serviceName Tên của service (ví dụ: 'payment-service')
+ * @param serviceName Tên của service (ví dụ: 'code-payment-service')
  */
 export const initTracing = (serviceName: string) => {
   if (isStarted) return;

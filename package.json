@@ -101,5 +101,11 @@
   },
   "overrides": {
     "protobufjs": "^8.1.0"
+  },
+  "allowScripts": {
+    "@nestjs/core@11.1.21": true,
+    "@scarf/scarf@1.4.0": true,
+    "protobufjs@8.3.0": true,
+    "unrs-resolver@1.11.1": true
   }
 }

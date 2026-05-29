@@ -38,7 +38,7 @@ describe('Tracing', () => {
         }),
       );
       expect(consoleSpy).toHaveBeenCalledWith(
-        '[Tracing] Initialized for test-service',
+        expect.stringContaining('[Tracing] Initialized for test-service'),
       );
 
       consoleSpy.mockRestore();

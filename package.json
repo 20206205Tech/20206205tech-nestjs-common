@@ -34,10 +34,10 @@
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/swagger": "^11.4.2",
     "@nestjs/typeorm": "^11.0.1",
-    "@opentelemetry/auto-instrumentations-node": "^0.76.0",
-    "@opentelemetry/exporter-prometheus": "^0.218.0",
-    "@opentelemetry/exporter-trace-otlp-proto": "^0.216.0",
-    "@opentelemetry/sdk-node": "^0.218.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.77.0",
+    "@opentelemetry/exporter-prometheus": "^0.219.0",
+    "@opentelemetry/exporter-trace-otlp-proto": "^0.219.0",
+    "@opentelemetry/sdk-node": "^0.219.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "typeorm": "^0.3.28"
@@ -100,7 +100,9 @@
     "access": "public"
   },
   "overrides": {
-    "protobufjs": "^8.1.0"
+    "protobufjs": "^8.6.0",
+    "js-yaml": "^4.1.2",
+    "@opentelemetry/core": "^2.8.0"
   },
   "allowScripts": {
     "@nestjs/core@11.1.21": true,
